@@ -14,10 +14,10 @@
              <th>タイトル</th>
              <th>本文</th>
           </tr>
-         @foreach($products as $product)
+         @foreach($posts as $post)
           <tr>
-              <td>{{ $product->title }}</td>
-              <td>{{ $product->content }}</td>
+              <td>{{ $post->title }}</td>
+              <td>{{ $post->content }}</td>
           </tr>            
          @endforeach       
      </table>
