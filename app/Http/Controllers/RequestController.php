@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class RequestController extends Controller
 {
     public function create() {
-        return view('requests.create');
+        return view('posts.create');
     } 
 
     public function confirm(Request $request) {
@@ -42,6 +42,6 @@ class RequestController extends Controller
             'ip'
         ];
 
-        return view('posts.confirm', compact($variables));
+        return view('posts.store', compact($variables));
     }    
 }

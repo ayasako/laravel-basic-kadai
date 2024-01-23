@@ -23,6 +23,6 @@ Route::get('/', function () {
 
  Route::get('/posts/{id}', [PostController::class, 'show']);
 
- Route::get('/requests/create', [RequestController::class, 'create']);
+ Route::get('/posts/create', [RequestController::class, 'create']);
  
- Route::post('/requests/confirm', [RequestController::class, 'confirm'])->name('posts.confirm');
+ Route::post('/posts/store', [RequestController::class, 'store'])->name('posts.store');
